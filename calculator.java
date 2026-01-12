@@ -8,13 +8,32 @@ public class calculator {
         System.out.print("");
         int firstNumber = input.nextInt();
 
+        /*flushes the previous input */
+        input.nextLine();
+
+        System.out.print("");
+        String operator = input.nextLine();
+
         /*Second number */
         System.out.print("");
         int secondNumber = input.nextInt();
-        /*simple arithmetic of all numbers straight away */
-        System.out.println("The sum of your two numbers are: "+ (firstNumber+secondNumber));
-        System.out.println("The subtraction of your two numbers are: "+ (firstNumber-secondNumber));
-        System.out.println("The product of your two numbers are: "+ (firstNumber*secondNumber));
-        System.out.println("The division of your two numbers are: "+ (firstNumber/secondNumber));
+
+        switch(operator){
+            case "+":
+                System.out.println(firstNumber + secondNumber);
+                break;
+            
+            case "-":
+                System.out.println(firstNumber - secondNumber);
+                break;
+
+            case "*":
+                System.out.println(firstNumber * secondNumber);
+                break;
+
+            case "/":
+                System.out.println(firstNumber / secondNumber);
+                break;
+        }
     }
 }
