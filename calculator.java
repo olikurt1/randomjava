@@ -7,6 +7,12 @@ public class calculator {
         
         System.out.print("");
         String calculation = input.nextLine();
+
+        /*replaceAll takes in an existing regular expression and then a replacement expression */
+        calculation = calculation.replaceAll("\\s+", "");
+        input.nextLine();
+
+        input.close();
         /*Have to have an end index if there are further numbers/texts */
         String strNum1 = calculation.substring(0,1);
         String operator = calculation.substring(1,2);
