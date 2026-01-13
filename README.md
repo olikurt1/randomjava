@@ -9,3 +9,6 @@ Line 11: fixes logical issue where the operator input takes in an empty line
 
 CHANGING INPUT FORMAT TO SINGLE LINE
 When breaking into substrings, an end index is optional for correct syntax but it is required if there are further values otherwise the substring will start at the beginning index and continue for the rest of the string.
+
+## RPS task----------
+java strings are evaluated using .equals as opposed to == for integers
