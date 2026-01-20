@@ -1,5 +1,7 @@
 import java.util.Scanner;
 import java.util.Random;
+import java.nio.file.*;
+import java.io.IOException;
 public class RPS {
     public static void main(String[] args){
         Scanner input = new Scanner(System.in);
@@ -22,9 +24,6 @@ public class RPS {
             System.out.print("Enter your choice, (r)ock, (p)aper, (s)cissors: ");
             String userChoice = input.nextLine();
             
-            
-            
-        
             if(userChoice.equals("r")){
                 switch(computerChoice){
                     case "rock":
@@ -86,6 +85,8 @@ public class RPS {
             System.out.println("DRAW!!");
         }
         input.close();
+
+        
         
     }
 }
