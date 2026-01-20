@@ -1,0 +1,2 @@
+Computer wins the game!
+score:  1

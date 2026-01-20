@@ -12,3 +12,5 @@ When breaking into substrings, an end index is optional for correct syntax but i
 
 ## RPS task----------
 java strings are evaluated using .equals as opposed to == for integers
+
+Files.methods must have a path parameter it cannot be the file name directly
