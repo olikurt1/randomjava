@@ -11,5 +11,6 @@ public class readingScores {
             //print the variable
             System.out.println(line);
         }
+        file.close();
     }
 }
