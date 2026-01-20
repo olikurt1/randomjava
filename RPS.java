@@ -3,7 +3,7 @@ import java.util.Random;
 import java.nio.file.*;
 import java.nio.file.Files;
 import java.io.IOException;
-import java.io.FileWriter;
+
 import java.util.Formatter;
 public class RPS {
     public static void main(String[] args)throws Exception{
@@ -89,30 +89,31 @@ public class RPS {
         
         
 
-        FileWriter writer = new FileWriter("ScoreSave.txt");
+       
         Formatter scoreSavFormatter = new Formatter("ScoreSave.txt");
         String userName = "User score: ";
         String computerName = "Computer score: ";
         scoreSavFormatter.format("%s %d%n", userName, userScore);
-        scoreSavFormatter.format("%s %d", computerName, computerScore);
-        scoreSavFormatter.close();
+        scoreSavFormatter.format("%s %d%n", computerName, computerScore);
+        
 
         
         if(userScore > computerScore){
             System.out.println("User wins game!");
-            writer.write("User wins game!\n");
+            scoreSavFormatter.format("%s", "User wins!!!");
 
         }
         else if(computerScore > userScore){
             System.out.println("Computer wins game!");
-            writer.write("Computer wins the game!\n");
+            scoreSavFormatter.format("%s", "Computer wins!!!");
         }
         else{
             System.out.println("DRAW!!");
-            writer.write("DRAW!!!!\n");
+            scoreSavFormatter.format("%s","DRAW!!!!\n");
         }
         input.close();
-        writer.close();
+        scoreSavFormatter.close();
+        
 
         
         

@@ -1,2 +1,3 @@
-Computer wins the game!
-score:  1
+User score:  1
+Computer score:  1
+DRAW!!!!
